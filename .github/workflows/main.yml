@@ -10,4 +10,5 @@ jobs:
       - run: |
           echo A comment on PR $NUMBER
         env:
-          NUMBER: ${{ github.event.issue.number }}
+          NUMBER: ${{ github.event.comment }}
+          
